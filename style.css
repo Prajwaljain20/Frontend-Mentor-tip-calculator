@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+body{
+    background: hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace;
+}
+.header{
+    margin: 3% 0 0 45%;
+}
+h2{
+    color: hsl(183, 100%, 15%);
+    margin-bottom: -20px;
+    letter-spacing: 15px;
+}
+.container {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 50%);
+    width: 70%;
+    height: 20%;
+    margin: 4% 11%;
+    border-radius: 20px;
+    padding: 30px 50px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 25px;
+}
+.card:nth-child(even){
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+    padding: 40px;
+}
+input {
+    font-family: 'Space Mono', monospace;
+    width: 90%;
+    height: 30px;
+    font-size: 24px;
+    margin: -15px 0 20px 0;
+    color: hsl(183, 100%, 15%);
+    border: none;
+    background-color: hsl(189, 41%, 97%);
+    cursor: pointer;
+    padding-right: 10px;
+    caret-color: hsl(172, 67%, 45%);
+}
+input[type="text"] {
+    text-align: right;
+}
+input::placeholder {
+    color: hsl(184, 14%, 56%);
+}
+input:focus{
+    outline: none;
+    border: 2px solid hsl(172, 67%, 45%);
+}
+.error {
+    color: hsl(0, 94%, 49%);
+    position: absolute;
+    margin: -45px 0 0 25%;
+    display: none;
+}
+.input-error {
+    border: 2px solid hsl(0, 94%, 49%);
+}
+.icon {
+    width: 12px;
+    height: 15px;
+    position: absolute;
+    margin: -45px 12px;
+}
+.dollar {
+    background: url('./images/icon-dollar.svg') center no-repeat;
+    background-size: 100% 100%;   
+}
+.people {
+    background: url('./images/icon-person.svg') center no-repeat;
+    background-size: 100% 100%;   
+}
+.tip-container {
+    display: grid;
+    grid-template-columns: 130px 130px 130px;
+    column-gap: 20px;
+    text-align: center;
+    row-gap: 20px;
+    margin-bottom: 40px;
+}
+.tip {
+    background-color: hsl(183, 100%, 15%);
+    font-size: 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 8px;
+    color: hsl(0, 0%, 100%);
+}
+.tip-input{
+    width: 130px;
+    height: 53px;
+    margin: 0 -65px;
+    border-radius: 10px;
+    position: absolute;
+}
+.tip-input::placeholder{
+    font-size: 24px;
+    text-align: center;
+    color: hsl(186, 14%, 43%);
+}
+.tip:hover {
+    background-color: hsl(172, 68%, 61%);
+    color: hsl(0, 0%, 0%);
+}
+.tip-selected {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(0, 0%, 0%);
+}
+h5 {
+    margin-top: -20px;
+    color: hsl(186, 14%, 43%);
+}
+button {
+    margin-top: 120px;
+    width: 100%;
+    height: 47px;
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+    background-color: hsl(172, 67%, 45%);
+    cursor: pointer;
+    text-transform: uppercase;
+    color: hsl(183, 100%, 15%);
+    border: none;
+    border-radius: 10px;
+}
+button:hover {
+    background-color: hsl(172, 68%, 61%);
+}
+.label {
+    display: grid;
+    grid-template-columns: 25% auto;
+}
+.amount {
+    font-size: 40px;
+    margin-top: 10px;
+    text-align: right;
+    color: hsl(172, 67%, 45%);
+}
+.card {
+    overflow-x: auto;
+}
+.attribution { font-size: 11px; text-align: center; position: fixed; bottom: 0; width: 100%;}
+.attribution a { color: hsl(228, 45%, 44%); }
+@media only screen and (max-width: 376px) {
+    .container {
+        display: block;
+        margin: 4% 0;
+        width: 90%;
+        padding: 20px;
+        border-radius: 20px 20px 0 0;
+    }
+    .header{
+        margin: 3% 0 20% 35%;
+    }
+    .tip-container {
+        margin-left: 5%;
+        grid-template-columns: 130px 130px;
+        margin-bottom: 40px;
+    }
+    .card:nth-child(even){
+        color: hsl(0, 0%, 100%);
+        padding: 10px 20px;
+    }
+    button {
+        margin-top: 10px;
+    }
+    .error {
+        margin-left: 47%;
+    }
+}
