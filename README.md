@@ -23,12 +23,13 @@ Users should be able to:
 - Calculate the correct tip and total cost of the bill per person
 
 ### Screenshot
+![image](https://github.com/Prajwaljain20/Frontend-Mentor-tip-calculator/assets/76695932/c61916f5-a9d8-4419-a53e-33f2e131e578)
 
 
 ### Links
 
-- Solution URL: [Github]()
-- Live Site URL: [Github pages]()
+- Solution URL: [Github](https://github.com/Prajwaljain20/Frontend-Mentor-tip-calculator)
+- Live Site URL: [Github pages](https://prajwaljain20.github.io/Frontend-Mentor-tip-calculator/)
 
 ## My process
 
